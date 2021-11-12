@@ -6,11 +6,11 @@ app = Flask(__name__)
 def home():
    return render_template('testingwebcam.html')
 
-@app.route('/')
+@app.route('/cooke')
 def west():
    return render_template('cooke.html')
 
-app.route('/')
+app.route('/west')
 def cooke():
    return render_template('west.html')
 
