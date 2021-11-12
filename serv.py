@@ -4,6 +4,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-   return render_template('testingwebcam.html', 'cooke.html', 'west.html')
+   return render_template('testingwebcam.html')
+def west():
+   return render_template('cooke.html')
+def cooke():
+   return render_template('west.html')
 if __name__ == '__main__':
    app.run(host="0.0.0.0", port=80, debug=True)
