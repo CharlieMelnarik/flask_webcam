@@ -2,6 +2,33 @@
 <html lang="en">
 <title>Lost Trail Webcams</title>
 <head>
+
+    <script>
+
+        $(document).ready(function() {
+       
+            $("a.loadPlot").click(function() {
+       
+                args = $(this).data('args');
+       
+                $.ajax({
+                    type: "GET",
+                    data: args,
+                    url: "{{ url_for('plot') }}",
+                    success: function(data) {
+                        $('#targetColumn').html(data)
+                    }
+              });
+       
+            });
+       
+        });
+       
+       </script>
+
+
+
+
     <style>
         h1{
             text-align: center;
