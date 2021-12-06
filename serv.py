@@ -1,18 +1,22 @@
 
 from flask import Flask, render_template
+import CsvReader
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-   return render_template('testingwebcam.html')
+def testingwebcam():
+   LostTrail = CsvReader.LostTrail()
+   return render_template('home.html', variable = LostTrail)
 
 @app.route('/cooke')
-def west():
-   return render_template('cooke.html')
-
-app.route('/west')
 def cooke():
-   return render_template('west.html')
+   CookeCity = CsvReader.CookeCity()
+   return render_template('cooke.html', variable = CookeCity)
+
+@app.route('/west')
+def west():
+   WestYellostone = CsvReader.WestYellowstone()
+   return render_template('west.html', variable = WestYellostone)
 
 if __name__ == '__main__':
    app.run(host="0.0.0.0", port=80, debug=True)
