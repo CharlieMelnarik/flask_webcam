@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6f002b5b-f626-4228-96b4-3209e31e8277" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serv.py" beforeDir="false" afterPath="$PROJECT_DIR$/serv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cooke.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cooke.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testingwebcam.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/west.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/west.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CsvReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/CsvReader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636581791487</updated>
       <workItem from="1636581792937" duration="145000" />
-      <workItem from="1638825812559" duration="3672000" />
+      <workItem from="1638825812559" duration="4847000" />
     </task>
     <servers />
   </component>
@@ -120,26 +117,26 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1638826560095" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1638829558218">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1638831972976">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1638829558218" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1638829558216">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1638831972976" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1638831972974">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1638829558216" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1638829558215">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1638831972974" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1638831972973">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1638829558215" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1638829558217">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1638831972973" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1638831972975">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1638829558217" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1638831972975" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/testserv$serv.coverage" NAME="serv Coverage Results" MODIFIED="1638829558196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testserv$serv.coverage" NAME="serv Coverage Results" MODIFIED="1638831972959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testserv$testserv.coverage" NAME="serv Coverage Results" MODIFIED="1636581938647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/testserv$CsvReader.coverage" NAME="CsvReader Coverage Results" MODIFIED="1638829538364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testserv$CsvReader.coverage" NAME="CsvReader Coverage Results" MODIFIED="1638831686157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
