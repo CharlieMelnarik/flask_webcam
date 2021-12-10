@@ -2,14 +2,14 @@ import csv
 # import selenium
 from datetime import date
 
-today = date.today()
-print(today)
+# today = date.today()
+# print(today)
 
 
 
 def LostTrail():
     keyword = ["Saddle Mtn.", "Moose Creek"]
-    with open("Snow Depth, December 5, 2021, end of day.csv", newline="") as csvfile:
+    with open("Snow Depth, December 9, 2021, end of day.csv", newline="") as csvfile:
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
             if row["Name"] == keyword[0]:
@@ -26,7 +26,7 @@ def LostTrail():
 
 def WestYellowstone():
     keyword = ["West Yellowstone", "Madison Plateau"]
-    with open("Snow Depth, December 5, 2021, end of day.csv", newline="") as csvfile:
+    with open("Snow Depth, December 9, 2021, end of day.csv", newline="") as csvfile:
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
             if row["Name"] == keyword[0]:
@@ -42,7 +42,7 @@ def WestYellowstone():
 
 def CookeCity():
     keyword = ["Northeast Entrance", "White Mill"]
-    with open("Snow Depth, December 5, 2021, end of day.csv", newline="") as csvfile:
+    with open("Snow Depth, December 9, 2021, end of day.csv", newline="") as csvfile:
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
             if row["Name"] == keyword[0]:
@@ -56,5 +56,18 @@ def CookeCity():
               (keyword[0],snowDepth,date,keyword[1],snowDepth1,date1))
     return answer
 
+def tallestMountain():
+    with  open("Snow Depth, December 9, 2021, end of day.csv", newline = '') as csvfile:
+        heightreader = csv.DictReader(csvfile)
+        tallest = 0
+        number = 0
+        for row in heightreader:
+            tallestnew = int(row["Elevation_ft"])
+            if tallestnew > tallest:
+                tallest = tallestnew
+                number = row
+        print("The highest weather station is", number["Name"], "at", tallest, "ft in", number["State"])
+
 # use for debugging
 # print(LostTrail())
+# tallestMountain()
