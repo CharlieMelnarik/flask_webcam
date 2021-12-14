@@ -26,7 +26,7 @@ def LostTrail():
 
 def WestYellowstone():
     keyword = ["West Yellowstone", "Madison Plateau"]
-    with open("Snow Depth, December 12, 2021, end of day.csv", newline="") as csvfile:
+    with open("/home/Chuckdafaq/flask_webcam/Snow Depth, December 12, 2021, end of day.csv", newline="") as csvfile:
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
             if row["Name"] == keyword[0]:
@@ -42,7 +42,7 @@ def WestYellowstone():
 
 def CookeCity():
     keyword = ["Northeast Entrance", "Fisher Creek"]
-    with open("Snow Depth, December 12, 2021, end of day.csv", newline="") as csvfile:
+    with open("/home/Chuckdafaq/flask_webcam/Snow Depth, December 12, 2021, end of day.csv", newline="") as csvfile:
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
             if row["Name"] == keyword[0]:
