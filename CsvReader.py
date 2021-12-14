@@ -9,7 +9,7 @@ from datetime import date
 
 def LostTrail():
     keyword = ["Saddle Mtn.", "Moose Creek"]
-    with open("Snow Depth, December 12, 2021, end of day.csv", newline="") as csvfile:
+    with open("/home/Chuckdafaq/flask_webcam/Snow Depth, December 12, 2021, end of day.csv", newline="") as csvfile:
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
             if row["Name"] == keyword[0]:
