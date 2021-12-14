@@ -4,7 +4,14 @@
 <head>
 
     <style>
+        body{
+            background-image: url("{{ url_for('static', filename='sled.jpeg') }}");
+            background-size: 100%;
+        }
         h1{
+            text-align: center;
+        }
+        h2{
             text-align: center;
         }
         img {
@@ -87,6 +94,7 @@
             ❆
           </div>
         </div>
+
         
     <ul>
       <li><a href="/">Lost Trail Webcams</a></li>
@@ -100,10 +108,6 @@
     <img alt="Cooke City Cam" src="http://etaylors.com/webcam/sbcameast.jpg?Resolution=2048x1536&Quality=Clarity&t=0.8425276421466685" style="display: block; margin-left: auto; margin-right:auto;">
 
 </head>
-<style>
-    body{
-        background-color:rgb(24, 69, 105);
-    }
-</style>
+
 
 </html>

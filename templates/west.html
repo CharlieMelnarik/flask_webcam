@@ -3,7 +3,14 @@
 <title>Lost Trail Webcams</title>
 <head>
     <style>
+        body{
+            background-image: url("{{ url_for('static', filename='sled.jpeg') }}");
+            background-size: 100%;
+        }
         h1{
+            text-align: center;
+        }
+        h2{
             text-align: center;
         }
         img {
@@ -94,12 +101,10 @@
     <h1>West Yellowstone Webcams</h1>
     <h2>{{variable}}</h2>
     <img alt="West Yellowsone Webcam" src="https://apps.itd.idaho.gov/apps/Inet_CARsCameraSnapshots/D6%20US-20%208.6%20West%20Yellowston%206-1.jpg?1638828540000" style="display: block; margin-left: auto; margin-right:auto;">
-    
+    <img alt="West Yellowsone Webcam" src="https://www.nps.gov/webcams-yell/west_gate.jpg?1639432019503" style="display: block; margin-left: auto; margin-right:auto; width: 75%; height: 75%;">
+
 </head>
-<style>
-    body{
-        background-color:rgb(24, 69, 105);
-    }
-</style>
+
 
 </html>
+
