@@ -9,7 +9,7 @@ from datetime import date
 
 def LostTrail():
     keyword = ["Saddle Mtn.", "Moose Creek"]
-    with open("/home/Chuckdafaq/flask_webcam/Snow Depth, December 12, 2021, end of day.csv", newline="") as csvfile:
+    with open("/home/Chuckdafaq/flask_webcam/Snow Depth, December 13, 2021, end of day.csv", newline="") as csvfile:
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
             if row["Name"] == keyword[0]:
@@ -26,7 +26,7 @@ def LostTrail():
 
 def WestYellowstone():
     keyword = ["West Yellowstone", "Madison Plateau"]
-    with open("/home/Chuckdafaq/flask_webcam/Snow Depth, December 12, 2021, end of day.csv", newline="") as csvfile:
+    with open("/home/Chuckdafaq/flask_webcam/Snow Depth, December 13, 2021, end of day.csv", newline="") as csvfile:
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
             if row["Name"] == keyword[0]:
@@ -42,7 +42,7 @@ def WestYellowstone():
 
 def CookeCity():
     keyword = ["Northeast Entrance", "Fisher Creek"]
-    with open("/home/Chuckdafaq/flask_webcam/Snow Depth, December 12, 2021, end of day.csv", newline="") as csvfile:
+    with open("/home/Chuckdafaq/flask_webcam/Snow Depth, December 13, 2021, end of day.csv", newline="") as csvfile:
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
             if row["Name"] == keyword[0]:
@@ -57,7 +57,7 @@ def CookeCity():
     return answer
 
 def tallestMountain():
-    with  open("Snow Depth, December 12, 2021, end of day.csv", newline = '') as csvfile:
+    with  open("Snow Depth, December 13, 2021, end of day.csv", newline = '') as csvfile:
         heightreader = csv.DictReader(csvfile)
         tallest = 0
         number = 0
@@ -69,7 +69,7 @@ def tallestMountain():
         print("The highest weather station is", number["Name"], "at", tallest, "ft in", number["State"])
 
 def deepestSnow():
-    with open("Snow Depth, December 12, 2021, end of day.csv", newline = '') as csvfile:
+    with open("Snow Depth, December 13, 2021, end of day.csv", newline = '') as csvfile:
         depthreader = csv.DictReader(csvfile)
         deepest = 0
         number = 0
@@ -88,7 +88,7 @@ def deepestSnow():
               "at", number["Elevation_ft"],"ft")
 
 def StationsByCounty(county):
-    with open("Snow Depth, December 12, 2021, end of day.csv", newline='') as csvfile:
+    with open("Snow Depth, December 13, 2021, end of day.csv", newline='') as csvfile:
         sitereader = csv.DictReader(csvfile)
         for row in sitereader:
             if row["County"] == county:
@@ -101,7 +101,7 @@ def StationsByCounty(county):
                     print(row["Name"], "depth:",row["Value_inches"],"inches, Elevation:", row["Elevation_ft"])
 
 def StationsByState(state):
-    with open("Snow Depth, December 12, 2021, end of day.csv", newline='') as csvfile:
+    with open("Snow Depth, December 13, 2021, end of day.csv", newline='') as csvfile:
         sitereader = csv.DictReader(csvfile)
         for row in sitereader:
             if row["State"] == state:
@@ -114,7 +114,7 @@ def StationsByState(state):
                     print(row["Name"], "depth:",row["Value_inches"],"inches, Elevation:", row["Elevation_ft"])
 
 def DeepestInState(state):
-    with open("Snow Depth, December 12, 2021, end of day.csv", newline='') as csvfile:
+    with open("Snow Depth, December 13, 2021, end of day.csv", newline='') as csvfile:
         sitereader = csv.DictReader(csvfile)
         deepest = 0
         number = 0
