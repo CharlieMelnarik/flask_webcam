@@ -4,8 +4,9 @@
     <list default="true" id="6f002b5b-f626-4228-96b4-3209e31e8277" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CsvReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/CsvReader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Snow Depth, December 13, 2021, end of day.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/serv.py" beforeDir="false" afterPath="$PROJECT_DIR$/serv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cooke.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cooke.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
       <recent name="$PROJECT_DIR$/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CsvReader">
+  <component name="RunManager" selected="Python.scraper">
     <configuration name="CsvReader" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="testserv" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -55,6 +56,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CsvReader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scraper" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="testserv" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scraper.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -88,6 +111,7 @@
     <list>
       <item itemvalue="Python.serv" />
       <item itemvalue="Python.CsvReader" />
+      <item itemvalue="Python.scraper" />
     </list>
   </component>
   <component name="ServiceViewManager">
@@ -116,7 +140,7 @@
       <workItem from="1638825812559" duration="5870000" />
       <workItem from="1638937598604" duration="665000" />
       <workItem from="1639163633751" duration="7293000" />
-      <workItem from="1639259341859" duration="8513000" />
+      <workItem from="1639259341859" duration="16793000" />
     </task>
     <servers />
   </component>
@@ -124,30 +148,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638826560095">
+    <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1639520874636">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1638826560095" />
-    <state width="1238" height="184" key="GridCell.Tab.0.bottom" timestamp="1639468979310">
+    <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1639520874636" />
+    <state width="1238" height="184" key="GridCell.Tab.0.bottom" timestamp="1639528937008">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="205" key="GridCell.Tab.0.bottom/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1639260311620" />
-    <state width="1238" height="184" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1639468979310" />
-    <state width="1238" height="184" key="GridCell.Tab.0.center" timestamp="1639468979309">
+    <state width="1238" height="184" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1639528937008" />
+    <state width="1238" height="184" key="GridCell.Tab.0.center" timestamp="1639528937007">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="205" key="GridCell.Tab.0.center/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1639260311617" />
-    <state width="1238" height="184" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1639468979309" />
-    <state width="1238" height="184" key="GridCell.Tab.0.left" timestamp="1639468979308">
+    <state width="1238" height="184" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1639528937007" />
+    <state width="1238" height="184" key="GridCell.Tab.0.left" timestamp="1639528937006">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="205" key="GridCell.Tab.0.left/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1639260311616" />
-    <state width="1238" height="184" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1639468979308" />
-    <state width="1238" height="184" key="GridCell.Tab.0.right" timestamp="1639468979310">
+    <state width="1238" height="184" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1639528937006" />
+    <state width="1238" height="184" key="GridCell.Tab.0.right" timestamp="1639528937007">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="205" key="GridCell.Tab.0.right/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1639260311619" />
-    <state width="1238" height="184" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1639468979310" />
+    <state width="1238" height="184" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1639528937007" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1639177337623">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -171,7 +195,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/testserv$serv.coverage" NAME="serv Coverage Results" MODIFIED="1639459064931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testserv$scraper.coverage" NAME="scraper Coverage Results" MODIFIED="1639528937000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testserv$testserv.coverage" NAME="serv Coverage Results" MODIFIED="1636581938647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/testserv$CsvReader.coverage" NAME="CsvReader Coverage Results" MODIFIED="1639468979298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testserv$CsvReader.coverage" NAME="CsvReader Coverage Results" MODIFIED="1639528288826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
