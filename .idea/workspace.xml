@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f002b5b-f626-4228-96b4-3209e31e8277" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CsvReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/CsvReader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snow Depth, December 13, 2021, end of day.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serv.py" beforeDir="false" afterPath="$PROJECT_DIR$/serv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +137,7 @@
       <workItem from="1638825812559" duration="5870000" />
       <workItem from="1638937598604" duration="665000" />
       <workItem from="1639163633751" duration="7293000" />
-      <workItem from="1639259341859" duration="16793000" />
+      <workItem from="1639259341859" duration="17290000" />
     </task>
     <servers />
   </component>
