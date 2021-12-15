@@ -1,7 +1,6 @@
 
 from flask import Flask, render_template
 import CsvReader
-import scraper
 app = Flask(__name__)
 
 @app.route('/')
