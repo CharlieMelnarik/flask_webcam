@@ -30,15 +30,15 @@ def cooke():
 
 @app.route('/west')
 def west():
-   keyword0 = CsvReader.CookeCity()[0]
-   depth0 =  CsvReader.CookeCity()[1]
-   date0 = CsvReader.CookeCity()[2]
-   keyword1 = CsvReader.CookeCity()[3]
-   depth1 = CsvReader.CookeCity()[4]
-   date1 = CsvReader.CookeCity()[5]
-   keyword2 = CsvReader.CookeCity()[6]
-   depth2 = CsvReader.CookeCity()[7]
-   date2 = CsvReader.CookeCity()[8]
+   keyword0 = CsvReader.WestYellowstone()[0]
+   depth0 =  CsvReader.WestYellowstone()[1]
+   date0 = CsvReader.WestYellowstone()[2]
+   keyword1 = CsvReader.WestYellowstone()[3]
+   depth1 = CsvReader.WestYellowstone()[4]
+   date1 = CsvReader.WestYellowstone()[5]
+   keyword2 = CsvReader.WestYellowstone()[6]
+   depth2 = CsvReader.WestYellowstone()[7]
+   date2 = CsvReader.WestYellowstone()[8]
    return render_template('west.html',  variable1 = keyword0, variable2 = depth0, variable3 = date0, variable4 = keyword1,
                           variable5 = depth1, variable6 = date1, variable7 = keyword2, variable8 = depth2, variable9 = date2)
 
