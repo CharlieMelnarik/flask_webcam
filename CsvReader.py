@@ -74,7 +74,9 @@ def tallestMountain():
         print("The highest weather station is", number["Name"], "at", tallest, "ft in", number["State"])
 
 def deepestSnow():
-    with open("Snow Depth.csv", newline = '') as csvfile:
+    # with open("Snow Depth.csv", newline = '') as csvfile:
+    with open("/home/Chuckdafaq/flask_webcam/Snow Depth.csv", newline="") as csvfile:
+
         depthreader = csv.DictReader(csvfile)
         deepest = 0
         number = 0
@@ -94,7 +96,9 @@ def deepestSnow():
 
 def StationsByCounty(county):
     list = []
-    with open("Snow Depth.csv", newline='') as csvfile:
+    # with open("Snow Depth.csv", newline='') as csvfile:
+    with open("/home/Chuckdafaq/flask_webcam/Snow Depth.csv", newline="") as csvfile:
+
         sitereader = csv.DictReader(csvfile)
         for row in sitereader:
             if row["County"] == county:
@@ -109,7 +113,9 @@ def StationsByCounty(county):
 
 def StationsByState(state):
     list = []
-    with open("Snow Depth.csv", newline='') as csvfile:
+    # with open("Snow Depth.csv", newline='') as csvfile:
+    with open("/home/Chuckdafaq/flask_webcam/Snow Depth.csv", newline="") as csvfile:
+
         sitereader = csv.DictReader(csvfile)
         for row in sitereader:
             if row["State"] == state:
@@ -123,7 +129,9 @@ def StationsByState(state):
         return list
 
 def DeepestInState(state):
-    with open("Snow Depth.csv", newline='') as csvfile:
+    # with open("Snow Depth.csv", newline='') as csvfile:
+    with open("/home/Chuckdafaq/flask_webcam/Snow Depth.csv", newline="") as csvfile:
+
         sitereader = csv.DictReader(csvfile)
         deepest = 0
         number = 0
