@@ -35,11 +35,11 @@ def WestYellowstone():
                 snowDepth1 = (row["Value_inches"])
                 date1 = (row["Date_of_Data"])
             if row["Name"] == keyword[2]:
-                snowDepth1 = (row["Value_inches"])
-                date1 = (row["Date_of_Data"])
+                snowDepth2 = (row["Value_inches"])
+                date2 = (row["Date_of_Data"])
 
-    answer = ('%s depth: %s inches as of %s:\n%s depth: %s inches as of %s'  %
-              (keyword[0],snowDepth,date,keyword[1],snowDepth1,date1))
+    answer = ('%s depth: %s inches as of %s:\n%s depth: %s inches as of %s \n%s depth: %s inches as of %s' %
+              (keyword[0], snowDepth, date, keyword[1], snowDepth1, date1, keyword[2], snowDepth2, date2))
     return answer
 
 def CookeCity():
@@ -54,11 +54,11 @@ def CookeCity():
                 snowDepth1 = (row["Value_inches"])
                 date1 = (row["Date_of_Data"])
             if row["Name"] == keyword[2]:
-                snowDepth1 = (row["Value_inches"])
-                date1 = (row["Date_of_Data"])
+                snowDepth2 = (row["Value_inches"])
+                date2 = (row["Date_of_Data"])
 
-    answer = ('%s depth: %s inches as of %s:\n%s depth: %s inches as of %s'  %
-              (keyword[0],snowDepth,date,keyword[1],snowDepth1,date1))
+    answer = ('%s depth: %s inches as of %s:\n%s depth: %s inches as of %s \n%s depth: %s inches as of %s'  %
+              (keyword[0],snowDepth,date,keyword[1],snowDepth1,date1,keyword[2],snowDepth2,date2))
     return answer
 
 def tallestMountain():
