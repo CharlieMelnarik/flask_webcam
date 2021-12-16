@@ -5,8 +5,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def testingwebcam():
-   LostTrail = CsvReader.LostTrail()
-   return render_template('home.html', variable = LostTrail)
+   keyword0 = CsvReader.LostTrail()[0]
+   depth0 =  CsvReader.LostTrail()[1]
+   date0 = CsvReader.LostTrail()[2]
+   keyword1 = CsvReader.LostTrail()[3]
+   depth1 = CsvReader.LostTrail()[4]
+   date1 = CsvReader.LostTrail()[5]
+   return render_template('home.html', variable1 = keyword0, variable2 = depth0, variable3 = date0, variable4 = keyword1,
+                          variable5 = depth1, variable6 = date1)
 
 @app.route('/cooke')
 def cooke():

@@ -19,9 +19,7 @@ def LostTrail():
                 date1 = (row["Date_of_Data"])
 
 
-    answer = ('%s depth: %s inches as of %s:\n%s depth: %s inches as of %s'  %
-              (keyword[0],snowDepth,date,keyword[1],snowDepth1,date1))
-    return answer
+    return [keyword[0], snowDepth, date, keyword[1], snowDepth1, date1]
 
 def WestYellowstone():
     keyword = ["West Yellowstone", "Madison Plateau", "Black Bear"]
@@ -139,6 +137,8 @@ def DeepestInState(state):
             print("The deepest snow in",state, "is", number["Name"], "at depth:",deepest,"inches, Elevation:", number["Elevation_ft"])
         except:
             print(state, "Has no snow sites")
+
+
 # use for debugging and just messing around
 # print(LostTrail())
 # print(CookeCity())
