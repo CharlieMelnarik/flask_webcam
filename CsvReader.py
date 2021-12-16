@@ -36,9 +36,7 @@ def WestYellowstone():
                 snowDepth2 = (row["Value_inches"])
                 date2 = (row["Date_of_Data"])
 
-    answer = ('%s depth: %s inches as of %s:\n%s depth: %s inches as of %s \n%s depth: %s inches as of %s' %
-              (keyword[0], snowDepth, date, keyword[1], snowDepth1, date1, keyword[2], snowDepth2, date2))
-    return answer
+    return [keyword[0], snowDepth, date, keyword[1], snowDepth1, date1, keyword[2], snowDepth2, date2]
 
 def CookeCity():
     keyword = ["Northeast Entrance", "Fisher Creek", "White Mill"]
@@ -55,9 +53,8 @@ def CookeCity():
                 snowDepth2 = (row["Value_inches"])
                 date2 = (row["Date_of_Data"])
 
-    answer = ('%s depth: %s inches as of %s:\n%s depth: %s inches as of %s \n%s depth: %s inches as of %s'  %
-              (keyword[0],snowDepth,date,keyword[1],snowDepth1,date1,keyword[2],snowDepth2,date2))
-    return answer
+    return [keyword[0], snowDepth, date, keyword[1], snowDepth1, date1, keyword[2], snowDepth2, date2]
+
 
 def tallestMountain():
     with  open("Snow Depth.csv", newline = '') as csvfile:
