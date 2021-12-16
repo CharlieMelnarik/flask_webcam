@@ -9,6 +9,8 @@ from datetime import date
 def LostTrail():
     keyword = ["Saddle Mtn.", "Moose Creek"]
     with open("/home/Chuckdafaq/flask_webcam/Snow Depth.csv", newline="") as csvfile:
+    # with open("Snow Depth.csv", newline="") as csvfile:
+
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
             if row["Name"] == keyword[0]:
@@ -24,6 +26,8 @@ def LostTrail():
 def WestYellowstone():
     keyword = ["West Yellowstone", "Madison Plateau", "Black Bear"]
     with open("/home/Chuckdafaq/flask_webcam/Snow Depth.csv", newline="") as csvfile:
+    # with open("Snow Depth.csv", newline="") as csvfile:
+
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
             if row["Name"] == keyword[0]:
@@ -41,6 +45,7 @@ def WestYellowstone():
 def CookeCity():
     keyword = ["Northeast Entrance", "Fisher Creek", "White Mill"]
     with open("/home/Chuckdafaq/flask_webcam/Snow Depth.csv", newline="") as csvfile:
+    # with open("Snow Depth.csv", newline="") as csvfile:
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
             if row["Name"] == keyword[0]:
@@ -88,6 +93,7 @@ def deepestSnow():
               "at", number["Elevation_ft"],"ft")
 
 def StationsByCounty(county):
+    list = []
     with open("Snow Depth.csv", newline='') as csvfile:
         sitereader = csv.DictReader(csvfile)
         for row in sitereader:
@@ -98,9 +104,11 @@ def StationsByCounty(county):
                 except:
                     pass
                 else:
-                    print(row["Name"], "depth:",row["Value_inches"],"inches, Elevation:", row["Elevation_ft"])
+                    list.append((row["Name"], "depth:",row["Value_inches"],"inches, Elevation:", row["Elevation_ft"]))
+    return list
 
 def StationsByState(state):
+    list = []
     with open("Snow Depth.csv", newline='') as csvfile:
         sitereader = csv.DictReader(csvfile)
         for row in sitereader:
@@ -111,29 +119,28 @@ def StationsByState(state):
                 except:
                     pass
                 else:
-                    print(row["Name"], "depth:",row["Value_inches"],"inches, Elevation:", row["Elevation_ft"])
+                    list.append((row["Name"], "depth:",row["Value_inches"],"inches, Elevation:", row["Elevation_ft"]))
+        return list
 
 def DeepestInState(state):
     with open("Snow Depth.csv", newline='') as csvfile:
         sitereader = csv.DictReader(csvfile)
         deepest = 0
         number = 0
-        try:
-            for row in sitereader:
-                if row["State"] == state:
-                    try:
-                        if int(row["Value_inches"]) == None:
-                            pass
-                    except:
+        for row in sitereader:
+            if row["State"] == state:
+                try:
+                    if int(row["Value_inches"]) == None:
                         pass
-                    else:
-                        newDeepest = int(row["Value_inches"])
-                        if newDeepest > deepest:
-                            deepest = newDeepest
-                            number = row
-            print("The deepest snow in",state, "is", number["Name"], "at depth:",deepest,"inches, Elevation:", number["Elevation_ft"])
-        except:
-            print(state, "Has no snow sites")
+                except:
+                    pass
+                else:
+                    newDeepest = int(row["Value_inches"])
+                    if newDeepest > deepest:
+                        deepest = newDeepest
+                        number = row
+        deep = ("The deepest snow in %s is %i inches at %s" % (state, deepest, number["Name"]))
+        return deep
 
 
 # use for debugging and just messing around
@@ -144,4 +151,4 @@ def DeepestInState(state):
 # deepestSnow()
 # StationsByCounty("Gallatin")
 # StationsByState("Montana")
-# DeepestInState("Montana")
+# print(DeepestInState("Montana"))

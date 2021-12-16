@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import CsvReader
 app = Flask(__name__)
 
@@ -41,6 +41,25 @@ def west():
    date2 = CsvReader.CookeCity()[8]
    return render_template('west.html',  variable1 = keyword0, variable2 = depth0, variable3 = date0, variable4 = keyword1,
                           variable5 = depth1, variable6 = date1, variable7 = keyword2, variable8 = depth2, variable9 = date2)
+
+@app.route('/SearchAnySite', methods=['GET', 'POST'])
+def search():
+   if request.method == "POST":
+      byState = request.form.get("state")
+      byCounty = request.form.get("county")
+      deepState = request.form.get("deep")
+      if byState != "":
+         state = CsvReader.StationsByState(byState)
+         return render_template('SearchAnySite.html', variable = state)
+      elif byCounty != "":
+         county = CsvReader.StationsByCounty(byCounty)
+         return render_template('SearchAnySite.html', variable = county)
+      elif deepState != "":
+         deepest = CsvReader.DeepestInState(deepState)
+         return render_template("SearchAnySite.html", variable1 = deepest)
+
+   return render_template('SearchAnySite.html')
+
 
 if __name__ == '__main__':
    app.run(host="0.0.0.0", port=80, debug=True)
