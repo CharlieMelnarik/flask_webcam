@@ -24,7 +24,7 @@ def LostTrail():
     return answer
 
 def WestYellowstone():
-    keyword = ["West Yellowstone", "Madison Plateau"]
+    keyword = ["West Yellowstone", "Madison Plateau", "Black Bear"]
     with open("/home/Chuckdafaq/flask_webcam/Snow Depth.csv", newline="") as csvfile:
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
@@ -34,13 +34,16 @@ def WestYellowstone():
             if row["Name"] == keyword[1]:
                 snowDepth1 = (row["Value_inches"])
                 date1 = (row["Date_of_Data"])
+            if row["Name"] == keyword[2]:
+                snowDepth1 = (row["Value_inches"])
+                date1 = (row["Date_of_Data"])
 
     answer = ('%s depth: %s inches as of %s:\n%s depth: %s inches as of %s'  %
               (keyword[0],snowDepth,date,keyword[1],snowDepth1,date1))
     return answer
 
 def CookeCity():
-    keyword = ["Northeast Entrance", "Fisher Creek"]
+    keyword = ["Northeast Entrance", "Fisher Creek", "White Mill"]
     with open("/home/Chuckdafaq/flask_webcam/Snow Depth.csv", newline="") as csvfile:
         snowreader = csv.DictReader(csvfile)
         for row in snowreader:
@@ -48,6 +51,9 @@ def CookeCity():
                 snowDepth = (row["Value_inches"])
                 date = (row["Date_of_Data"])
             if row["Name"] == keyword[1]:
+                snowDepth1 = (row["Value_inches"])
+                date1 = (row["Date_of_Data"])
+            if row["Name"] == keyword[2]:
                 snowDepth1 = (row["Value_inches"])
                 date1 = (row["Date_of_Data"])
 
@@ -139,6 +145,6 @@ def DeepestInState(state):
 # print(WestYellowstone())
 # tallestMountain()
 # deepestSnow()
-# StationsByCounty("Park")
+# StationsByCounty("Gallatin")
 # StationsByState("Montana")
 # DeepestInState("Montana")
