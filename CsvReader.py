@@ -19,6 +19,7 @@ def LostTrail():
             if row["Name"] == keyword[1]:
                 snowDepth1 = (row["Value_inches"])
                 date1 = (row["Date_of_Data"])
+                date1 = date1[:16]
 
 
     return [keyword[0], snowDepth, date, keyword[1], snowDepth1, date1]
