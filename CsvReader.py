@@ -16,10 +16,11 @@ def LostTrail():
             if row["Name"] == keyword[0]:
                 snowDepth = (row["Value_inches"])
                 date = (row["Date_of_Data"])
+                date = date[:17]
             if row["Name"] == keyword[1]:
                 snowDepth1 = (row["Value_inches"])
                 date1 = (row["Date_of_Data"])
-                date1 = date1[:16]
+                date1 = date1[:17]
 
 
     return [keyword[0], snowDepth, date, keyword[1], snowDepth1, date1]
@@ -34,12 +35,15 @@ def WestYellowstone():
             if row["Name"] == keyword[0]:
                 snowDepth = (row["Value_inches"])
                 date = (row["Date_of_Data"])
+                date = date[:17]
             if row["Name"] == keyword[1]:
                 snowDepth1 = (row["Value_inches"])
                 date1 = (row["Date_of_Data"])
+                date1 = date1[:17]
             if row["Name"] == keyword[2]:
                 snowDepth2 = (row["Value_inches"])
                 date2 = (row["Date_of_Data"])
+                date2 = date2[:17]
 
     return [keyword[0], snowDepth, date, keyword[1], snowDepth1, date1, keyword[2], snowDepth2, date2]
 
@@ -52,12 +56,15 @@ def CookeCity():
             if row["Name"] == keyword[0]:
                 snowDepth = (row["Value_inches"])
                 date = (row["Date_of_Data"])
+                date = date[:17]
             if row["Name"] == keyword[1]:
                 snowDepth1 = (row["Value_inches"])
                 date1 = (row["Date_of_Data"])
+                date1 = date1[:17]
             if row["Name"] == keyword[2]:
                 snowDepth2 = (row["Value_inches"])
                 date2 = (row["Date_of_Data"])
+                date2 = date2[:17]
 
     return [keyword[0], snowDepth, date, keyword[1], snowDepth1, date1, keyword[2], snowDepth2, date2]
 
