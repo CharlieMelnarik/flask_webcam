@@ -8,6 +8,12 @@
             background-image: url("{{ url_for('static', filename='sled.jpeg') }}");
             background-size: 100%;
         }
+        iframe{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
         h1{
             text-align: center;
         }
@@ -101,13 +107,13 @@
 
         
     <ul>
-      <li><a href="/">Lost Trail Webcams</a></li>
-      <li><a href="/west">West Yellowstone Webcams</a></li>
-      <li><a href="/cooke">Cooke City Webcams</a></li>
+      <li><a href="/">Lost Trail</a></li>
+      <li><a href="/west">West Yellowstone</a></li>
+      <li><a href="/cooke">Cooke City</a></li>
       <li><a href="/SearchAnySite">Search Snow Depth Sites</a></li>
     </ul>
 
-    <h1>Cooke City Webcams</h1>
+    <h1>Cooke City</h1>
 
     <table>
       <tr>
@@ -134,6 +140,15 @@
 
     <img alt="Cooke City Cam1" src="http://etaylors.com/webcam/sbcamwest.jpg?Resolution=2048x1536&Quality=Clarity&t=0.37062733542734705" style="display: block; margin-left: auto; margin-right:auto;">
     <img alt="Cooke City Cam2" src="http://etaylors.com/webcam/sbcameast.jpg?Resolution=2048x1536&Quality=Clarity&t=0.8425276421466685" style="display: block; margin-left: auto; margin-right:auto;">
+
+<iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=45.002&lon=-109.993&detailLat=45.668&detailLon=-111.242&width=650&height=450&zoom=8&level=surface&overlay=snowcover&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=mph&metricTemp=%C2%B0F&radarRange=-1" frameborder="0"></iframe>
+
+
+<a class="weatherwidget-io" href="https://forecast7.com/en/45d02n109d92/cooke-city-silver-gate/?unit=us" data-label_1="COOKE CITY-SILVER GATE" data-label_2="WEATHER" data-theme="original" >COOKE CITY-SILVER GATE WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
 
 </head>
 
