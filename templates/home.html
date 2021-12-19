@@ -19,7 +19,11 @@
         iframe{
           width: 75%;
         }
-
+        #WeatherForcast{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
         h1{
             text-align: center;
         }
@@ -141,7 +145,7 @@
 <iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=45.710&lon=-113.921&detailLat=45.668&detailLon=-111.242&width=650&height=450&zoom=8&level=surface&overlay=snowcover&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=mph&metricTemp=%C2%B0F&radarRange=-1" frameborder="0"></iframe>
 
 
-<a class="weatherwidget-io" href="https://forecast7.com/en/45d84n113d98/sula/?unit=us" data-label_1="SULA" data-label_2="WEATHER" data-theme="original" >SULA WEATHER</a>
+<a id="WeatherForcast" class="weatherwidget-io" href="https://forecast7.com/en/45d84n113d98/sula/?unit=us" data-label_1="SULA" data-label_2="WEATHER" data-theme="original" >SULA WEATHER</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
