@@ -11,8 +11,11 @@ def testingwebcam():
    keyword1 = CsvReader.LostTrail()[3]
    depth1 = CsvReader.LostTrail()[4]
    date1 = CsvReader.LostTrail()[5]
+   twentyfourHourChange = CsvReader.LostTrail()[6]
+   twentyfourHourChange1 = CsvReader.LostTrail()[7]
    return render_template('home.html', variable1 = keyword0, variable2 = depth0, variable3 = date0, variable4 = keyword1,
-                          variable5 = depth1, variable6 = date1)
+                          variable5 = depth1, variable6 = date1, variable7 = twentyfourHourChange,
+                          variable8 = twentyfourHourChange1)
 
 @app.route('/cooke')
 def cooke():
@@ -25,8 +28,14 @@ def cooke():
    keyword2 = CsvReader.CookeCity()[6]
    depth2 = CsvReader.CookeCity()[7]
    date2 = CsvReader.CookeCity()[8]
+   twentyfourHourChange = CsvReader.CookeCity()[9]
+   twentyfourHourChange1 = CsvReader.CookeCity()[10]
+   twentyfourHourChange2 = CsvReader.CookeCity()[11]
+
+
    return render_template('cooke.html', variable1 = keyword0, variable2 = depth0, variable3 = date0, variable4 = keyword1,
-                          variable5 = depth1, variable6 = date1, variable7 = keyword2, variable8 = depth2, variable9 = date2)
+                          variable5 = depth1, variable6 = date1, variable7 = keyword2, variable8 = depth2, variable9 = date2,
+                          variable10 = twentyfourHourChange, variable11 = twentyfourHourChange1, variable12 = twentyfourHourChange2)
 
 @app.route('/west')
 def west():
@@ -39,8 +48,12 @@ def west():
    keyword2 = CsvReader.WestYellowstone()[6]
    depth2 = CsvReader.WestYellowstone()[7]
    date2 = CsvReader.WestYellowstone()[8]
+   twentyfourHourChange = CsvReader.WestYellowstone()[9]
+   twentyfourHourChange1 = CsvReader.WestYellowstone()[10]
+   twentyfourHourChange2 = CsvReader.WestYellowstone()[11]
    return render_template('west.html',  variable1 = keyword0, variable2 = depth0, variable3 = date0, variable4 = keyword1,
-                          variable5 = depth1, variable6 = date1, variable7 = keyword2, variable8 = depth2, variable9 = date2)
+                          variable5 = depth1, variable6 = date1, variable7 = keyword2, variable8 = depth2, variable9 = date2,
+                          variable10 = twentyfourHourChange, variable11 = twentyfourHourChange1, variable12 = twentyfourHourChange2)
 
 @app.route('/SearchAnySite', methods=['GET', 'POST'])
 def search():

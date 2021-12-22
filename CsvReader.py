@@ -22,8 +22,28 @@ def LostTrail():
                 date1 = (row["Date_of_Data"])
                 date1 = date1[:17]
 
+    #compare the yesterdays csv to todays
+    # with open("Snow Depth2.csv", newline = "") as csvfile:
+    with open("/home/Chuckdafaq/flask_webcam/Snow Depth2.csv", newline="") as csvfile:
 
-    return [keyword[0], snowDepth, date, keyword[1], snowDepth1, date1]
+        snowreader1 = csv.DictReader(csvfile)
+
+        for row in snowreader1:
+            if row["Name"] == keyword[0]:
+                oldDepth = (row["Value_inches"])
+            if row["Name"] == keyword[1]:
+                oldDepth1 = (row["Value_inches"])
+
+    try:
+        twentyfourHourDepth = int(snowDepth) - int(oldDepth)
+    except:
+        twentyfourHourDepth = "error"
+    try:
+        twentyfourHourDepth1 = int(snowDepth1) - int(oldDepth1)
+    except:
+        twentyfourHourDepth1 = "error"
+
+    return [keyword[0], snowDepth, date, keyword[1], snowDepth1, date1, twentyfourHourDepth, twentyfourHourDepth1]
 
 def WestYellowstone():
     keyword = ["West Yellowstone", "Madison Plateau", "Black Bear"]
@@ -45,7 +65,36 @@ def WestYellowstone():
                 date2 = (row["Date_of_Data"])
                 date2 = date2[:17]
 
-    return [keyword[0], snowDepth, date, keyword[1], snowDepth1, date1, keyword[2], snowDepth2, date2]
+    # compare the yesterdays csv to todays
+    # with open("Snow Depth2.csv", newline="") as csvfile:
+    with open("/home/Chuckdafaq/flask_webcam/Snow Depth2.csv", newline="") as csvfile:
+
+        snowreader1 = csv.DictReader(csvfile)
+
+        for row in snowreader1:
+            if row["Name"] == keyword[0]:
+                oldDepth = (row["Value_inches"])
+            if row["Name"] == keyword[1]:
+                oldDepth1 = (row["Value_inches"])
+            if row["Name"] == keyword[2]:
+                oldDepth2 = (row["Value_inches"])
+
+    try:
+        twentyfourHourDepth = int(snowDepth) - int(oldDepth)
+    except:
+        twentyfourHourDepth = "error"
+    try:
+        twentyfourHourDepth1 = int(snowDepth1) - int(oldDepth1)
+    except:
+        twentyfourHourDepth1 = "error"
+    try:
+        twentyfourHourDepth2 = int(snowDepth2) - int(oldDepth2)
+    except:
+        twentyfourHourDepth2 = "error"
+
+
+    return [keyword[0], snowDepth, date, keyword[1], snowDepth1, date1, keyword[2], snowDepth2, date2,
+            twentyfourHourDepth, twentyfourHourDepth1, twentyfourHourDepth2]
 
 def CookeCity():
     keyword = ["Northeast Entrance", "Fisher Creek", "White Mill"]
@@ -66,7 +115,36 @@ def CookeCity():
                 date2 = (row["Date_of_Data"])
                 date2 = date2[:17]
 
-    return [keyword[0], snowDepth, date, keyword[1], snowDepth1, date1, keyword[2], snowDepth2, date2]
+
+    # compare the yesterdays csv to todays
+    # with open("Snow Depth2.csv", newline="") as csvfile:
+    with open("/home/Chuckdafaq/flask_webcam/Snow Depth2.csv", newline="") as csvfile:
+
+        snowreader1 = csv.DictReader(csvfile)
+
+        for row in snowreader1:
+            if row["Name"] == keyword[0]:
+                oldDepth = (row["Value_inches"])
+            if row["Name"] == keyword[1]:
+                oldDepth1 = (row["Value_inches"])
+            if row["Name"] == keyword[2]:
+                oldDepth2 = (row["Value_inches"])
+
+    try:
+        twentyfourHourDepth = int(snowDepth) - int(oldDepth)
+    except:
+        twentyfourHourDepth = "error"
+    try:
+        twentyfourHourDepth1 = int(snowDepth1) - int(oldDepth1)
+    except:
+        twentyfourHourDepth1 = "error"
+    try:
+        twentyfourHourDepth2 = int(snowDepth2) - int(oldDepth2)
+    except:
+        twentyfourHourDepth2 = "error"
+
+    return [keyword[0], snowDepth, date, keyword[1], snowDepth1, date1, keyword[2], snowDepth2, date2, twentyfourHourDepth
+            ,twentyfourHourDepth1, twentyfourHourDepth2]
 
 
 def tallestMountain():
