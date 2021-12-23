@@ -55,6 +55,39 @@ def west():
                           variable5 = depth1, variable6 = date1, variable7 = keyword2, variable8 = depth2, variable9 = date2,
                           variable10 = twentyfourHourChange, variable11 = twentyfourHourChange1, variable12 = twentyfourHourChange2)
 
+@app.route('/lolo')
+def lolo():
+   keyword = CsvReader.LoloPass()[0]
+   depth = CsvReader.LoloPass()[1]
+   date = CsvReader.LoloPass()[2]
+   twentyfourHourChange = CsvReader.LoloPass()[3]
+   return render_template('Lolo.html', variable1 = keyword, variable2 = depth, variable3 = date, variable4 = twentyfourHourChange)
+
+@app.route('/losthorse')
+def LostHorse():
+   keyword0 = CsvReader.LostHorse()[0]
+   depth0 =  CsvReader.LostHorse()[1]
+   date0 = CsvReader.LostHorse()[2]
+   keyword1 = CsvReader.LostHorse()[3]
+   depth1 = CsvReader.LostHorse()[4]
+   date1 = CsvReader.LostHorse()[5]
+   twentyfourHourChange = CsvReader.LostHorse()[6]
+   twentyfourHourChange1 = CsvReader.LostHorse()[7]
+   return render_template('losthorse.html', variable1 = keyword0, variable2 = depth0, variable3 = date0, variable4 = keyword1,
+                          variable5 = depth1, variable6 = date1, variable7 = twentyfourHourChange,
+                          variable8 = twentyfourHourChange1)
+
+
+@app.route('/seeley')
+def SeeleyLake():
+   keyword = CsvReader.SeeleyLake()[0]
+   depth = CsvReader.SeeleyLake()[1]
+   date = CsvReader.LoloPass()[2]
+   twentyfourHourChange = CsvReader.SeeleyLake()[3]
+   return render_template('seeleylake.html', variable1=keyword, variable2=depth, variable3=date,
+                          variable4=twentyfourHourChange)
+
+
 @app.route('/SearchAnySite', methods=['GET', 'POST'])
 def search():
    if request.method == "POST":
