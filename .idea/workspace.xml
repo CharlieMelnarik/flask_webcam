@@ -40,7 +40,7 @@
       <recent name="$PROJECT_DIR$/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.FetchSnotelCSV">
+  <component name="RunManager" selected="Python.autoUpdate">
     <configuration name="CsvReader" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="testserv" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,6 +77,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../FetchSnotelCSV.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="autoUpdate" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="testserv" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../autoUpdate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,6 +152,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.autoUpdate" />
       <item itemvalue="Python.serv" />
       <item itemvalue="Python.FetchSnotelCSV" />
       <item itemvalue="Python.CsvReader" />
@@ -162,7 +185,7 @@
       <workItem from="1638825812559" duration="5870000" />
       <workItem from="1638937598604" duration="665000" />
       <workItem from="1639163633751" duration="7293000" />
-      <workItem from="1639259341859" duration="46772000" />
+      <workItem from="1639259341859" duration="48274000" />
     </task>
     <servers />
   </component>
@@ -170,30 +193,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1640150746729">
+    <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641147155162">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1640150746729" />
-    <state width="1238" height="184" key="GridCell.Tab.0.bottom" timestamp="1641062364863">
+    <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1641147155162" />
+    <state width="1238" height="184" key="GridCell.Tab.0.bottom" timestamp="1641147803918">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="205" key="GridCell.Tab.0.bottom/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1639260311620" />
-    <state width="1238" height="184" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1641062364863" />
-    <state width="1238" height="184" key="GridCell.Tab.0.center" timestamp="1641062364860">
+    <state width="1238" height="184" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1641147803918" />
+    <state width="1238" height="184" key="GridCell.Tab.0.center" timestamp="1641147803917">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="205" key="GridCell.Tab.0.center/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1639260311617" />
-    <state width="1238" height="184" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1641062364860" />
-    <state width="1238" height="184" key="GridCell.Tab.0.left" timestamp="1641062364859">
+    <state width="1238" height="184" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1641147803917" />
+    <state width="1238" height="184" key="GridCell.Tab.0.left" timestamp="1641147803916">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="205" key="GridCell.Tab.0.left/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1639260311616" />
-    <state width="1238" height="184" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1641062364859" />
-    <state width="1238" height="184" key="GridCell.Tab.0.right" timestamp="1641062364860">
+    <state width="1238" height="184" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1641147803916" />
+    <state width="1238" height="184" key="GridCell.Tab.0.right" timestamp="1641147803918">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="205" key="GridCell.Tab.0.right/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1639260311619" />
-    <state width="1238" height="184" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1641062364860" />
+    <state width="1238" height="184" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1641147803918" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1639638802792">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -224,8 +247,9 @@
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1639894259409" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/testserv$FetchSnotelCSV.coverage" NAME="FetchSnotelCSV Coverage Results" MODIFIED="1641062325543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
+    <SUITE FILE_PATH="coverage/testserv$FetchSnotelCSV.coverage" NAME="FetchSnotelCSV Coverage Results" MODIFIED="1641143265043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
     <SUITE FILE_PATH="coverage/testserv$serv.coverage" NAME="serv Coverage Results" MODIFIED="1640239282049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testserv$autoUpdate.coverage" NAME="autoUpdate Coverage Results" MODIFIED="1641147803907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
     <SUITE FILE_PATH="coverage/testserv$scraper.coverage" NAME="scraper Coverage Results" MODIFIED="1639599763058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testserv$testserv.coverage" NAME="serv Coverage Results" MODIFIED="1636581938647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testserv$CsvReader.coverage" NAME="CsvReader Coverage Results" MODIFIED="1640149321805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
